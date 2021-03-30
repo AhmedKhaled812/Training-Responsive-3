@@ -19,12 +19,13 @@ a {
   color: #888;
 }
 
+/* header */
+
 header {
   background-image: url(./assets/img/bg_hero_1.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 header .container {
@@ -148,5 +149,131 @@ header .container {
   .hero p {
     width: 60%;
     font-size: 15px;
+  }
+}
+
+/* pricing */
+
+.main-pricing {
+  margin-top: 90px;
+  background-image: url(./assets/img/pattern_2.svg);
+}
+
+.main-pricing .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Pricing {
+  width: 40%;
+}
+
+.Pricing h1 {
+  color: rgb(145, 132, 132);
+}
+
+.Pricing p {
+  line-height: 1.9;
+}
+
+.Pricing h1,
+p {
+  padding-bottom: 30px;
+}
+
+.btn-plan {
+  background-color: #734ef7;
+  border-radius: 50px;
+  padding: 18px 15px 18px 7px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.call-icon {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pricing-items {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin: 15px;
+  padding: 60px 20px 80px 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(56 51 64 / 19%);
+}
+.pricing-items.grayscale {
+  background-image: url('./assets/img/pricing_pattern_grayscale.svg');
+  margin-top: 150px;
+}
+
+.pricing-items.active {
+  background-image: url('./assets/img/pricing_pattern.svg');
+}
+
+.header-pricing h5 {
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #444;
+}
+.header-pricing .Mony-active {
+  padding-bottom: 45px;
+  color: #1737f1;
+  font-size: 40px;
+}
+
+.header-pricing .Mony-grayscale {
+  padding-bottom: 45px;
+  color: #716c7b;
+  font-size: 40px;
+}
+
+.List {
+  list-style: none;
+  padding-bottom: 40px;
+}
+
+.List .List-items {
+  padding-bottom: 25px;
+}
+
+.icon-true {
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: rgba(128, 95, 95, 0.2);
+}
+
+.btn-pricing-button {
+  padding: 15px 24px;
+  border-radius: 5px;
+  background-color: #242129;
+  color: #fff;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1116px) {
+  .pricing-items {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1002px) {
+  .Pricing {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .Pricing P {
+    font-size: 14px;
   }
 }
